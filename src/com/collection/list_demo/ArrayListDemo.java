@@ -33,29 +33,26 @@ public class ArrayListDemo {
 			System.out.println(arr.get(i));
 		}
 		System.out.println("]]");
-		
-		
+
 		System.out.println("Iterating Using ForEach Loop");
-		 for(String fruit:arr) {
-			 System.out.println(fruit);
-		 }
-		 
-		 
+		for (String fruit : arr) {
+			System.out.println(fruit);
+		}
+
 		System.out.println("Iterating Using Iterator");
-		Iterator<String> itr=arr.iterator();
-		while(itr.hasNext()) {
+		Iterator<String> itr = arr.iterator();
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
-		
-		
+
 		Collections.sort(arr);
-		System.out.println("After Sorting>>"+arr);
-		
-		Collections.sort(arr,Collections.reverseOrder());
-		System.out.println("After Reverse Sorting>>"+arr);
-		
-		arr.clear();
-		System.out.println("List is empty?"+arr.isEmpty());
+		System.out.println("After Sorting>>" + arr);
+
+		Collections.sort(arr, Collections.reverseOrder());
+		System.out.println("After Reverse Sorting>>" + arr);
+
+//		arr.clear();
+//		System.out.println("List is empty?"+arr.isEmpty());
 
 	}
 
